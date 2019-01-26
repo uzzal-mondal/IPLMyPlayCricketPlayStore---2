@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="10dp">
+    
+    <ImageView
+        android:id="@+id/imageMainTeamSquadRow_id"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="3dp"
+        android:layout_marginStart="3dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textMainTeamSquadRow_title_id"
+            android:text="Title"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:gravity="start"
+            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+
+            />
+
+        <TextView
+            android:id="@+id/textMainTeamSquadRow_discrip_id"
+            android:text="Description"
+            android:textStyle="normal"
+            android:layout_marginLeft="12dp"
+            android:gravity="start"
+            android:layout_marginTop="8dp"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

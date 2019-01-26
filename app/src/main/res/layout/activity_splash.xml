@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/relativeLayout_id"
+    android:background="#ffffff"
+    tools:context=".SplashActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_logoSplash_id"
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:background="@drawable/ball"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="190dp" />
+
+        <ImageView
+            android:id="@+id/tv_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="320dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/title"
+            android:text="@string/app_name" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:background="#673AB7">
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_height="320dp"
+            android:gravity="bottom"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="#673AB7">
+
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="114dp"
+            android:indeterminate="true"
+            android:theme="@style/progressTheme"
+
+
+            />
+        <TextView
+            android:id="@+id/textIpl_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IPL-2019"
+            android:textSize="40dp"
+            android:textColor="#efeff1"
+            style="@style/AlertDialog.AppCompat.Light"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="40dp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,228 @@
+<resources>
+    <string name="app_name">IPL2019LiveMatchScheduleFixture</string>
+
+    <!--card view team selector-->
+    <string name="team">Team and Squad</string>
+    <string name="schedule">Schedule</string>
+    <string name="highlights">Highlights</string>
+    <string name="stadiums">Stadiums</string>
+    <string name="winers">Winers</string>
+    <string name="records">Records</string>
+    <string name="ipltimestart"> IPL will   beginning to time </string>
+    <string name="countDownFixture">IPL T20 Match Schedule &amp;(Fixtures)</string>
+
+
+    <!--Sunrise hydarabad player show-->
+    <string name="Davidd">David Warner (Foreigner)\n	Batting\n	12 Cr</string>
+    <string name="Bhuvneshwar">Bhuvneshwar Kumar\n	Bowler\n	8.5 Cr</string>
+    <string name="Rashid">Rashid Khan (Foreigner)\n	Bowler\n	9 Cr</string>
+    <string name="Deepakk">Deepak Hooda\n	    All-Rounder\n	3.6 M</string>
+    <string name="Ricky">Ricky Bhui\n	        Batting\n	20 Lacs</string>
+    <string name="Manish">Manish Pandey\n	        Batting\n	11 Cr</string>
+    <string name="Kane">Kane Williamson (Foreigner)\n	Batting\n	3 Cr</string>
+    <string name="Yusuf">Yusuf Pathan\n	        All-Rounder\n	1.90 Cr</string>
+    <string name="Shakib">Shakib Al Hasan (Foreigner)\n	All-Rounder\n	2 Cr</string>
+    <string name="Billy">Billy Stanlake (Foreigner)\n	Bowler\n	50 Lacs</string>
+    <string name="Sandeepp">Sandeep Sharma\n	Bowler\n	3 Cr</string>
+    <string name="Khaleel">Khaleel Ahmed\n	        Bowler\n	3 Cr</string>
+    <string name="Siddarth">Siddarth Kaul\n	        Bowler\n	3.80 Cr</string>
+    <string name="T">T Natarajan\n	        Bowler\n	40 Lacs</string>
+    <string name="Basil">Basil Thampi\n	        Bowler\n	95 Lacs</string>
+    <string name="Mohammad">Mohammad Nabi (Foreigner)\n	All-Rounder\n	1 Cr</string>
+    <string name="Shreevats">Shreevats Goswami\n	wicket keeper\n	1 Cr</string>
+    <string name="Wriddhiman">Wriddhiman Saha\n	wicket keeper\n	1.2 Cr</string>
+    <string name="Martin">Martin Guptill (Foreigner)\n	Batting\n	1 Cr</string>
+    <string name="Abhishek">Abhishek Sharma\n	All-Rounder\n	Traded</string>
+    <string name="Vijay">Vijay Shankar\n	        All-Rounder\n	Traded</string>
+    <string name="Shahbaz">Shahbaz Nadeem\n	Bowler\n	Traded</string>
+    <string name="Jonny">Jonny Bairstow (Foreigner)\n	wicket keeper\n	2.20 Cr</string>
+
+
+    <!--kings XI Punjab-->
+    <string name="Davidi">David Miller (Foreigner)\n	Batting\n 3 Cr</string>
+    <string name="Mayank">Mayank Agarwal\n	Batting\n  1 Cr</string>
+    <string name="Karun">Karun Nair\n	Batting\n  5.60 Cr</string>
+    <string name="Chrisi">Chris Gayle (Foreigner)\n	Batting \n 2 Cr</string>
+    <string name="Andrew">Andrew Tye (Foreigner)\n	Bowler\n	7.20 Cr</string>
+    <string name="Mujeeb">Mujeeb Zadran (Foreigner)\n	Bowler\n	4 Cr</string>
+    <string name="Ravichandran">Ravichandran Ashwin\n	Bowler\n	7.60 Cr</string>
+    <string name="Ankit">Ankit Rajpoot\n	Bowler\n	3 Cr</string>
+    <string name="Lokesh">Lokesh Rahul\n	wicket keeper\n	11 Cr</string>
+    <string name="PrabhSimran">PrabhSimran Singh\n	wicket keeper\n	4.80 Cr</string>
+    <string name="Sarfaraz">Sarfaraz Khan\n	Batting\n	25 Lacs</string>
+    <string name="Agnivesh">Agnivesh Ayachi\n	Batting\n 	20 Lacs</string>
+    <string name="Harpreet">Harpreet Brar\n	 All-Rounder\n	20 Lacs</string>
+    <string name="Moises">Moises Henriques (Foreigner)\n	All-Rounder\n	1 Cr</string>
+    <string name="Arshdeep">Arshdeep Singh\n	Bowler\n	20 Lacs</string>
+    <string name="Darshan">Darshan Nalkande\n	Bowler\n	30 Lacs</string>
+    <string name="Murugan">Murugan Ashwin	Bowler\n	20\n Lacs</string>
+    <string name="Varuni">Varun Chakravarthy\n	Bowler\n	8.40 Cr</string>
+    <string name="Hardus">Hardus Viljoen (Foreigner)\n	Bowler\n	75 Lacs</string>
+    <string name="Mohammedi">Mohammed Shami\n	Bowler\n	4.80 Cr</string>
+    <string name="Sami">Sam Curran (Foreigner)\n	All-Rounder\n	7.20 Cr</string>
+    <string name="Nicholas">Nicholas Pooran (Foreigner)\n	wicket keeper\n	4.20 Cr</string>
+    <string name="Mandeep">Mandeep Singh\n	Batting\n	Traded</string>
+
+
+    <!--rajstan royel in xml my coding...-->
+    <string name="Steven">Steven Smith (Foreigner)\n	Batting\n	12 Cr</string>
+    <string name="Ajinkya">Ajinkya Rahane\n	Batting\n	4 Cr</string>
+    <string name="Dhawal">Dhawal Kulkarni\n	Bowler\n	75 Lacs</string>
+    <string name="Aryaman">Aryaman Birla\n	Batting\n	30 Lacs</string>
+    <string name="Rahull">Rahul Tripathi\n	Batting\n	3.40 Cr</string>
+    <string name="Stuart">Stuart Binny\n	All-Rounder\n	50 Lacs</string>
+    <string name="Mahipal">Mahipal Lomror\n	All-Rounder\n	20 Lacs</string>
+    <string name="Jaydev">Jaydev Unadkat\n	Bowler\n	11.50 Cr</string>
+    <string name="S">S Midhun\n	Bowler\n	20 Lacs</string>
+    <string name="Shreyass">Shreyas Gopal\n	Bowler\n	20 Lacs</string>
+
+    <string name="Krishnappa">Krishnappa Gowtham\n	Bowler\n	6.2 Cr</string>
+    <string name="Jofra">Jofra Archer (Foreigner)\n	All-Rounder\n	7.20 Cr</string>
+    <string name="Ben">Ben Stokes (Foreigner)\n	All-Rounder\n	12.50 Cr</string>
+    <string name="Jos">Jos Buttler (Foreigner)\n	wicket keeper\n	4.40 Cr</string>
+    <string name="Prashant">Prashant Chopra\n	wicket keeper\n	20 Lacs</string>
+    <string name="Sanju">Sanju Samson\n	wicket keeper\n	8 Cr</string>
+    <string name="Shashank">Shashank Singh\n	Batting\n	30 Lacs</string>
+    <string name="Riyan">Riyan Parag\n	Batting\n	20 Lacs</string>
+    <string name="Liam">Liam Livingstone (Foreigner)\n	Batting\n	50 Lacs</string>
+    <string name="Manan">Manan Vohra\n	Batting\n	20 Lacs</string>
+    <string name="Ashton">Ashton Turner (Foreigner)\n	Bowler\n50 Lacs</string>
+    <string name="Varun">Varun Aaron\n	Bowler\n	2.40 Cr</string>
+    <string name="Oshane">Oshane Thomas (Foreigner)\n	Bowler\n	1.10 Cr</string>
+    <string name="Ish">Ish Sodhi (Foreigner)\n	Bowler\n	50 Lacs</string>
+
+
+    <!--chennai superking -->
+    <string name="MS">MS Dhoni\n	wicket keeper\n	15 Cr</string>
+    <string name="Suresh">Suresh Raina\n	Batting\n	11 Cr</string>
+    <string name="Ravindra">Ravindra Jadeja\n	All-Rounder\n	7 Cr</string>
+    <string name="Faf">Faf du Plessis (Foreigner)\n	Batting\n	1.6 Cr</string>
+    <string name="Dwayne">Dwayne Bravo (Foreigner)\n	All-Rounder\n	6.4 Cr</string>
+    <string name="Chaitanya">Chaitanya Bishnoi\n	Batting\n	20 Lacs</string>
+    <string name="Dhruv">Dhruv Shorey\n	Batting\n	20 Lacs</string>
+    <string name="Murali">Murali Vijay\n	Batting\n	2 Cr</string>
+    <string name="Kedar">Kedar Jadhav\n	All-Rounder\n	7.8 Cr</string>
+    <string name="Shane">Shane Watson (Foreigner)\n	All-Rounder\n	4 Cr</string>
+    <string name="Harbhajan">Harbhajan Singh\n	Bowler\n	2 Cr</string>
+    <string name="Deepak">Deepak Chahar\n	Bowler\n	80 Lacs</string>
+    <string name="Lungisani">Lungisani Ngidi (Foreigner)\n	Bowler\n	50 Lacs</string>
+    <string name="Monu">Monu Kumar\n	Bowler\n	20 Lacs</string>
+    <string name="Shardul">Shardul Thakur\n	Bowler\n	2.6 Cr</string>
+    <string name="KM">KM Asif\n	Bowler\n	40 Lacs</string>
+    <string name="Imran">Imran Tahir (Foreigner)\n	Bowler\n	1 Cr</string>
+    <string name="Mitchell">Mitchell Santner (Foreigner)\n	All-Rounder\n	50 Lacs</string>
+    <string name="Karn">Karn Sharma\n	All-Rounder\n	5 Cr</string>
+    <string name="N">N Jagadeesan\n	wicket keeper\n	20 Lacs</string>
+    <string name="Ambati">Ambati Rayudu\n	wicket keeper\n	2.2 Cr</string>
+    <string name="Sam">Sam Billings (Foreigner)\n	wicket keeper\n	1 Cr</string>
+    <string name="Ruturaj">Ruturaj Gaikwad\n	Batting\n	20 lacs</string>
+    <string name="Mohit">Mohit Sharma\n	Bowler\n	5 Cr</string>
+    <string name="David">David Willey (Foreigner)\n	All-Rounder\n	2 Cr</string>
+
+
+    <!--mombai Indians-->
+    <string name="mfast_name">Rohit Sharma\n	Batting\n	15 Cr</string>
+    <string name="msecond_name">Jasprit Bumrah\n	Bowler\n	7 Cr</string>
+    <string name="mthird_name">Hardik Pandya\n	All-Rounder\n	11 Cr</string>
+    <string name="mfour_name">Krunal Pandya\n	All-Rounder\n	8.8 Cr</string>
+    <string name="mfive_name">Kieron Pollard(Foreigner)\n All-Rounder\n 5.4 Cr</string>
+    <string name="msix_name">Evin Lewis (Foreigner)\n	Batting\n	3.8 Cr</string>
+    <string name="mseven_name">Suryakumar Yadav\n	Batting\n 3.2 Cr</string>
+    <string name="meight_name">Siddhesh Lad\n	Batting\n	20 Lacs</string>
+    <string name="mnine_name">Mayank Markande\n	Batting\n	20 Lacs</string>
+    <string name="mten_name">Anukul Sudhakar Roy\n	All-Rounder\n	20 Lacs</string>
+    <string name="meleven_name">Jason Behrendorff (Foreigner)\n	Bowler\n	1.5 Cr</string>
+    <string name="mtwelve_name">Rahul Chahar\n	Bowler\n	1.9 Cr</string>
+    <string name="mthirteen_name">Ben Cutting (Foreigner)\n	All-Rounder\n	2.2 Cr</string>
+    <string name="mfourteen_name">Aditya Tare\n	wicket keeper\n	20 Lacs</string>
+    <string name="mfifteen_name">Ishan Kishan\n	wicket keeper\n	6.2 Cr</string>
+    <string name="msixteen_name">Rasikh Salam\n	Bowler\n	20 Lacs</string>
+    <string name="mseventeen_name">Anmolpreet Singh\n	Batting\n	80 Lacs</string>
+    <string name="meighteen_name">Yuvraj Singh\n	All-Rounder\n	1 Cr</string>
+    <string name="mnineteen_name">Barinder Sran\n	Bowler\n	3.4 Cr</string>
+    <string name="mtwenty_name">Lasith Malinga(Foreigner)\n Bowler\n 2 Cr</string>
+    <string name="mtwentyOne_name">Adam Milne (Foreigner)\n	Bowler\n	75 Lacs</string>
+    <string name="mtwentyTwo_name">Mitchell McClenaghan (Foreigner)\n	Bowler\n	1 Cr</string>
+    <string name="mtwentyThree_name">Pankaj Jaiswal\n	All-Rounder\n	20 Lacs</string>
+    <string name="mtwentyFour_name">Quinton de Kock (Foreigner)\n Traded</string>
+
+
+    <!--Royal challengers bangalore-->
+    <string name="Virat">Virat Kohli\n	Batting\n	17 Cr</string>
+    <string name="AB">AB de Villiers (Foreigner)\n	Batting\n	11 Cr</string>
+    <string name="Yuzvendra">Yuzvendra Chahal\n	Bowler\n	6 Cr</string>
+    <string name="Pawan">Pawan Negi\n	All-Rounder\n	1 Cr</string>
+    <string name="Moeen">Moeen Ali (Foreigner)\n	All-Rounder\n	1.70 Cr</string>
+    <string name="Colin">Colin de Grandhomme (Foreigner)\n	All-Rounder\n	2.20 Cr</string>
+    <string name="Washington">Washington Sundar\n	All-Rounder\n	3.20 Cr</string>
+    <string name="Nathan">Nathan Coulter-Nile (Foreigner)\n	Bowler\n	2.20 Cr</string>
+    <string name="Mohammed">Mohammed Siraj\n	Bowler\n	2.60 Cr</string>
+    <string name="Navdeep">Navdeep Saini\n	Bowler\n	3 Cr</string>
+    <string name="Kulwant">Kulwant Khejroliya\n	Bowler\n	85 Lacs</string>
+    <string name="Tim">Tim Southee (Foreigner)\n	Bowler\n	1 Cr</string>
+    <string name="Umesh">Umesh Yadav\n	Bowler\n	4.20 Cr</string>
+    <string name="Parthiv">Parthiv Patel\n	wicket keeper\n	1.70 Cr</string>
+    <string name="Prayas">Prayas Barman\n	Bowler\n	1.5 Cr</string>
+    <string name="Himmat">Himmat Singh\n	Batting\n	65 Lacs</string>
+    <string name="Akshdeep">Akshdeep Nath\n	Batting\n	3.6 Cr</string>
+    <string name="Shivam">Shivam Dube/n	Batting\n	5 Cr</string>
+    <string name="Devdutt">Devdutt Padikkal\n	Batting\n	20 Lacs</string>
+    <string name="Gurkeerat">Gurkeerat Singh Mann\n	Batting\n	50 Lacs</string>
+    <string name="Shimron">Shimron Hetmyer (Foreigner)\n	Batting\n	4.2 Cr</string>
+    <string name="Milind">Milind Kumar\n	Batting\n	20 Lacs</string>
+    <string name="Heinrich">Heinrich Klaasen (Foreigner)\n	wicket keeper\n	50 Lacs</string>
+    <string name="Marcus">Marcus Stoinis (Foreigner)\n	All-Rounder\n	Traded</string>
+
+
+    <!--dellhi dare devils-->
+    <string name="Shreyas">Shreyas Iyer\n	Batting\n	7 Cr</string>
+    <string name="Shikhar">Shikhar Dhawan\n	Batting\n	Traded</string>
+    <string name="Prithvi">Prithvi Shaw\n	Batting\n	1.20 Cr</string>
+    <string name="Colinn">Colin Ingram (Foreigner)\n	Batting\n	6.40 Cr</string>
+    <string name="Manjot">Manjot Kalra\n	Batting\n	20 Lacs</string>
+    <string name="Jalaj">Jalaj Saxena\n	All-Rounder\n	20 Lacs</string>
+    <string name="Sherfane">Sherfane Rutherford (Foreigner)\n	All\n	2 Cr</string>
+    <string name="Hanuma">Hanuma Vihari\n 	All-Rounder\n	2 Cr</string>
+    <string name="ColinMunro">Colin Munro (Foreigner)\n	All-Rounder\n	1.9 Cr</string>
+    <string name="Ishant">Ishant Sharma\n	Bowler\n	1.10 Cr</string>
+    <string name="Nathu">Nathu Singh\n	Bowler\n	20 Lacs</string>
+    <string name="Trent">Trent Boult (Foreigner)\n	Bowler\n	2.20 Cr</string>
+    <string name="Sandeep">Sandeep Lamichhane (Foreigner)\n	Bowler\n	20 Lacs</string>
+    <string name="Kagiso">Kagiso Rabada (Foreigner)\n	Bowler\n	4.20 Cr</string>
+    <string name="Amit">Amit Mishra\n	Bowler\n	4 Cr</string>
+    <string name="Avesh">Avesh Khan\n	Bowler\n 70 Lacs</string>
+    <string name="Harshal">Harshal Patel\n	Bowler\n	20 Lacs</string>
+    <string name="Rahul">Rahul Tewatia\n	Bowler\n	3 Cr</string>
+    <string name="Jayant">Jayant Yadav\n	Bowler\n	50 Lacs</string>
+    <string name="Bandaru">Bandaru Ayyappa\n	Bowler\n	20 Lacs</string>
+    <string name="Keemo">Keemo Paul (Foreigner)\n	All-Rounder\n	50 Lacs</string>
+    <string name="Axar">Axar Patel\n	All-Rounder\n	5 Cr</string>
+    <string name="Chris">Chris Morris (Foreigner)\n	All-Rounder\n	15 Cr</string>
+    <string name="Rishabh">Rishabh Pant\n	wicket keeper\n	11 Cr</string>
+
+
+    <!--kolkata knight ryders-->
+    <string name="Andre">Andre Russell (Foreigner)\n	All-Rounder\n	8.5 Cr</string>
+    <string name="Sunil">Sunil Narine (Foreigner)\n	Bwl\n	12.5 Cr</string>
+    <string name="Kuldeep">Kuldeep Yadav\n	 Bowler\n	5.8 Cr</string>
+    <string name="Piyush">Piyush Chawla\n	 All-Rounder\n	4.20 Cr</string>
+    <string name="Robin">Robin Uthappa\n	 wicket keeper\n	6.4 Cr</string>
+    <string name="Nitish">Nitish Rana\n	 Batting\n	3.40 Cr</string>
+    <string name="Shubman">Shubman Gill\n	 Batting\n	1.8 Cr</string>
+    <string name="Rinku">Rinku Singh\n	 Batting\n	80 Lacs</string>
+    <string name="Chrish">Chris Lynn (Foreigner)\n	Batting\n	9.60 Cr</string>
+    <string name="Kamlesh">Kamlesh Nagarkoti\n	Bowler\n	3.20 Cr</string>
+    <string name="Shivamm">Shivam Mavi\n	All-Rounder\n	3 Cr</string>
+    <string name="Dinesh">Dinesh Karthik\n	wicket keeper\n	7.40 Cr</string>
+    <string name="Nikhil">Nikhil Naik\n	 Bat\n	20 Lacs</string>
+    <string name="Joe">Joe Denly (Foreigner)\n	 All-Rounder\n	1 Cr</string>
+    <string name="Shrikant">Shrikant Mundhe\n	Bowler\n	20 Lacs</string>
+    <string name="Anrich">Anrich Nortje (Foreigner)\n	Bowler\n	20 Lacs</string>
+    <string name="Harry">Harry Gurney (Foreigner)\n	Bowler\n	75 Lacs</string>
+    <string name="Lockie">Lockie Ferguson (Foreigner)\n	Bowler\n	1.60 Cr</string>
+    <string name="Yarra">Yarra Prithviraj\n	Bowler\n	20 Lacs</string>
+    <string name="Carlos">Carlos Brathwaite (Foreigner)\n	All-Rounder\n	5 Cr</string>
+    <string name="Prasidh">Prasidh Krishna\n	Bowler\n	20 Lacs</string>
+
+
+</resources>

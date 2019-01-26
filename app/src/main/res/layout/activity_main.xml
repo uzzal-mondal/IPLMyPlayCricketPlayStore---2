@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="1dp"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+        android:background="@drawable/main_bg_update"
+        android:orientation="vertical">
+
+
+
+
+        <RelativeLayout
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:id="@+id/textGrid_id"
+                android:text="Indian Primer League"
+                android:maxLines="1"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:textSize="25sp"
+                android:textColor="@android:color/white"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+
+
+        </RelativeLayout>
+
+        <GridLayout
+
+            android:id="@+id/gridlayoutMain_id"
+            android:padding="10dp"
+            android:alignmentMode="alignMargins"
+            android:rowCount="3"
+            android:columnCount="2"
+            android:layout_weight="8"
+            android:layout_width="match_parent"
+            android:columnOrderPreserved="false"
+            android:layout_height="0dp">
+
+
+            <!--######Frist card view added -->
+
+
+            <!--card view added to my project-->
+
+            <!--row 1 create my project-->
+            <!--colum 1 create my project-->
+            <android.support.v7.widget.CardView
+
+
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageTeamSquad_id"
+                        android:src="@drawable/teamsquad"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="71dp"
+                        android:layout_height="71dp"
+                        android:layout_marginBottom="10dp"
+
+                        />
+
+                    <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="#673AB7">-->
+
+                    <!--</View>-->
+
+
+
+
+                    <TextView
+                        android:id="@+id/textViewTeamSquad_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Teams &amp; Squad"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <!--colum 2 create my project-->
+
+            <android.support.v7.widget.CardView
+
+
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageViewMatchSchedule_id"
+                        android:layout_width="57dp"
+                        android:layout_height="57dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/matchschedule"
+                        android:layout_marginBottom="25dp"
+
+                        />
+
+                    <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="#673AB7">-->
+
+                    <!--</View>-->
+
+
+
+
+                    <TextView
+                        android:id="@+id/textViewMatchSchudle_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Match Schedule"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <!--######Second  card view added -->
+
+            <!--row 1 create my project-->
+            <!--card view added to my project-->
+
+            <!--colum 3 create my project-->
+            <android.support.v7.widget.CardView
+
+
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageViewStadium_id"
+                        android:src="@drawable/stadium"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="75dp"
+                        android:layout_height="55dp"
+                        android:layout_marginBottom="18dp"
+
+                        />
+
+
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:background="#673AB7">-->
+
+                    <!--</View>-->
+
+                    <TextView
+                        android:id="@+id/textViewStadium_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Best Stadium"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <!--colum 4 create my project-->
+            <android.support.v7.widget.CardView
+
+
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageViewLiveScore_id"
+                        android:src="@drawable/livescorepic"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="54dp"
+                        android:layout_height="54dp"
+                        android:layout_marginBottom="22dp"
+
+                        />
+
+
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:background="#673AB7">-->
+
+                    <!--</View>-->
+
+                    <TextView
+                        android:id="@+id/textViewLive_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Live Score"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <!--######Third  card view added -->
+            <!--colum 5 create my project-->
+            <android.support.v7.widget.CardView
+
+
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageViewRecord_id"
+                        android:src="@drawable/record"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="53dp"
+                        android:layout_height="53dp"
+                        android:layout_marginBottom="5dp"
+
+                        />
+
+
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:background="#673AB7">-->
+
+                    <!--</View>-->
+
+                    <TextView
+                        android:id="@+id/textViewRecord_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="     Record  "
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <!--colum 6 create my project-->
+            <android.support.v7.widget.CardView
+
+
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageViewWinners_id"
+                        android:src="@drawable/winners"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="47dp"
+                        android:layout_height="47dp"
+                        android:layout_marginBottom="15dp"
+
+                        />
+
+
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:background="#673AB7">-->
+
+                    <!--</View>-->
+
+                    <TextView
+                        android:id="@+id/textViewWiners_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Winers Team"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+
+
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageViewSharing_id"
+                        android:src="@drawable/sharing"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="5dp"
+
+                        />
+
+
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:background="#673AB7">-->
+
+                    <!--</View>-->
+
+                    <TextView
+                        android:id="@+id/textViewShare_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Share"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+
+
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageViewRating_id"
+                        android:src="@drawable/ratting"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="53dp"
+                        android:layout_height="53dp"
+                        android:layout_marginBottom="5dp"
+
+                        />
+
+
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:background="#673AB7">-->
+
+                    <!--</View>-->
+
+                    <TextView
+                        android:id="@+id/textViewRating_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rating  Us"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>
+

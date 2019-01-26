@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#130826"
+    android:orientation="vertical"
+    tools:context=".StadiumActivity">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+
+            <!--2018-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:src="@drawable/venumumbai"/>
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Venue: Mumbai"
+                    android:textColor="#ff000000"
+                    android:textSize="14.0sp" />
+
+
+
+            </LinearLayout>
+
+
+
+            <!--second layout design.#####-->
+
+
+            <!--2017-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:src="@drawable/venu_bangaluru_arif"
+                   />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Venue: Bangaleru"
+                    android:textColor="#ff000000"
+                    android:textSize="14.0sp" />
+
+
+
+            </LinearLayout>
+
+
+
+
+            <!--2016-->
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:src="@drawable/venu_hydarabadarif"
+                    />
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Venue: Hydarabad"
+                    android:textColor="#ff000000"
+                    android:textSize="14.0sp" />
+
+
+
+            </LinearLayout>
+
+
+
+            <!--2015-->
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:src="@drawable/venu_rajsthanarif"
+                    />
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Venue: Rajsthan Royal"
+                    android:textColor="#ff000000"
+                    android:textSize="14.0sp" />
+
+
+
+            </LinearLayout>
+
+
+            <!--2014-->
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:src="@drawable/venu_kolkata_arif"
+                    />
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Venue: Kolkata"
+                    android:textColor="#ff000000"
+                    android:textSize="14.0sp" />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+            <!--2013 design in android studio tutorial-->
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:src="@drawable/venu_jaipuarif"
+                    />
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Venue: Jaipur"
+                    android:textColor="#ff000000"
+                    android:textSize="14.0sp" />
+
+
+
+            </LinearLayout>
+
+
+            <!--2012-->
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:src="@drawable/venu_punjabarif"
+                    />
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Venue: Punjab"
+                    android:textColor="#ff000000"
+                    android:textSize="14.0sp" />
+
+
+
+            </LinearLayout>
+
+
+
+            <!--2011-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="5.0dip"-->
+                <!--android:background="@drawable/matchschedule_back"-->
+                <!--android:orientation="vertical"-->
+                <!--android:padding="5.0dip">-->
+
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="150dp"-->
+                    <!--android:src="venu_chennay_arif"-->
+                    <!--/>-->
+
+
+                <!--<TextView-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="8dp"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Venue: Chennai"-->
+                    <!--android:textColor="#ff000000"-->
+                    <!--android:textSize="14.0sp" />-->
+
+
+
+            <!--</LinearLayout>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,3669 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#130826"
+    android:orientation="vertical"
+    tools:context=".MatchScheduleActivity">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <TextView
+                android:id="@+id/textViewMarquee_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ipltimestart"
+                android:textColor="#ffffff"
+                android:gravity="center"
+
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:padding="10dp"
+
+                android:textSize="22.0sp"
+                android:background="#001747"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout_id"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <!--counter selection-->
+
+                <LinearLayout
+                    android:id="@+id/linearLayout10_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/counterblack"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textTimerDay_id"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="00"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="30.0sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textTimerDay2_id"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_horizontal"
+                        android:text="Days"
+
+                        android:textSize="20sp"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="#BDDD51"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout11_Id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/counterblack"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textTimerHour_id"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+
+                        android:text="00"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="30.0sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textTimerHour2_id"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_horizontal"
+                        android:text="Hours"
+                        android:textSize="20sp"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="#BDDD51"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout12_Id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/counterblack"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textTimerMinute_id"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="00"
+
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="30.0sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textTimerMinute2_id"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_horizontal"
+                        android:text="Minutes"
+                        android:textSize="20sp"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="#BDDD51"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout13_Id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/counterblack"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textTimerSecond_id"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="00"
+
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="30.0sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textTimerSecond2_id"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_horizontal"
+                        android:text="Seconds"
+                        android:textSize="20sp"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="#BDDD51"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--time count now end to my project code-->
+
+
+
+            <!--start fixtures-->
+
+
+            <TextView
+                android:id="@+id/textView2_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10.0dip"
+                android:background="#001747"
+
+                android:padding="5.0dip"
+                android:text="@string/countDownFixture"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="#ffffffff"
+                android:textSize="20.0sp"
+                android:textStyle="bold" />
+
+
+
+            <!--    1111111111111111111111111111111111111111111 play IPL  -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 1"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="23th Mar 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_1_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/chennai"
+                    android:drawableRight="@drawable/sunrisehydarabad"
+                    android:text="Chennai Super Kings\n  VS\n Sunrise Hydarabad"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M.A.Chidambaram Chepauk Stadium, Chennai, Tamilnadu."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+
+            <!--  2   play IPL-->
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 2"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="24th Mar 2019,  4.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_2_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/kingselevenpunjab"
+                    android:drawableRight="@drawable/dellhi"
+                    android:text="Kings XI Punjab\n  VS\n Delhi Capitals"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PCA Stadium Mohali, Punjab"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+
+
+
+
+            <!--  3   play IPL-->
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 3"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="24th Mar 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_3_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/kolkata"
+                    android:drawableRight="@drawable/royalchalanger"
+                    android:text="Kolkata Knight Riders\n  VS\nRoyal Challengers"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Eden Gardens Kolkata, West Bengal."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+
+
+
+            </LinearLayout>
+
+            <!--  4   play IPL-->
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 4"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="25th Mar 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_4_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/sunrisehydarabad"
+                    android:drawableRight="@drawable/rajstanroyal"
+                    android:text="Sun Risers Hyderabad\n  VS\n Rajasthan Royals"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="R.G.I. Cricket Stadium, Hyderabad, Telangana."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+
+            </LinearLayout>
+
+            <!--    5      play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 5"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="(1st April 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_5_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/chennai"
+                    android:drawableRight="@drawable/kolkata"
+                    android:text="Chennai Super Kings\n  VS\n Kolkata Knight Riders "
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M.A.Chidambaram Chepauk Stadium, Chennai, Tamilnadu."
+                    android:textColor="#000000"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+
+            <!--    6      play IPL-->-->
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 6"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2nd April 2019, Sat 8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_6_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/rajstanroyal"
+                    android:drawableRight="@drawable/dellhi"
+                    android:text="Rajasthan Royals\n  VS\n Delhi Capitals"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sawai Mansingh Stadium, Jaipur, Rajasthan"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+
+
+            <!--    7     play IPL-->-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 7"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3rd April 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_7_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/sunrisehydarabad"
+                    android:drawableRight="@drawable/mombai"
+                    android:text="Sun Risers Hyderabad\n  VS\n Mumbai Indians"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="R.G.I. Cricket Stadium, Hyderabad, Telangana."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+            <!--   8      play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 8"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4th April 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_8_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/royalchalanger"
+                    android:drawableRight="@drawable/kingselevenpunjab"
+                    android:text=" Royal Challengers\n  VS\n Kings XI Punjab"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M.Chinnaswamy Stadium, Bengaluru, Karnataka."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+            <!--    9     play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 9"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5th April 2019,  4.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_9_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/mombai"
+                    android:drawableRight="@drawable/dellhi"
+                    android:text="Mumbai Indians\n  VS\n Delhi Capitals"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wankhede Stadium Mumbai, Maharashtra."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+            <!--   10      play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 10"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5th April 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_10_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/kolkata"
+                    android:drawableRight="@drawable/sunrisehydarabad"
+                    android:text="Kolkata Knight Riders\n  VS\n Sunrisers Hydarabad"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Eden Gardens Kolkata, West Bengal."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+            <!--    11      play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 11"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6th April 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_11_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/royalchalanger"
+                    android:drawableRight="@drawable/rajstanroyal"
+                    android:text="Royal Challengers\n  VS\n Rajasthan Royals"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M.Chinnaswamy Stadium, Bengaluru, Karnataka.."
+                    android:textColor="#000000"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+            <!--    12      play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 12"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="7th April 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_12_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/kingselevenpunjab"
+                    android:drawableRight="@drawable/chennai"
+                    android:text="Kings XI Punjab\n  VS\n Chennai Super Kings"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PCA Stadium Mohali, Punjab"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+            <!--   13     play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 13"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6th April 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_13_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/kolkata"
+                    android:drawableRight="@drawable/dellhi"
+                    android:text="Kolkata Knight Riders\n  VS\n Delhi Capitals"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Eden Gardens Kolkata, West Bengal."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+            <!--    14      play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 14"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="9th April 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_14_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/mombai"
+                    android:drawableRight="@drawable/royalchalanger"
+                    android:text="Mumbai Indians\n  VS\n Royal Challengers"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wankhede Stadium Mumbai, Maharashtra."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+            <!--    15      play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 15"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10th April 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_15_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/rajstanroyal"
+                    android:drawableRight="@drawable/kolkata"
+                    android:text="Rajasthan Royals\n  VS\n Kolkata Knight Riders"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sawai Mansingh Stadium, Jaipur, Rajasthan"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+            <!--    16     play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 16"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="11th April 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_16_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/kingselevenpunjab"
+                    android:drawableRight="@drawable/sunrisehydarabad"
+                    android:text="Kings XI Punjab\n  VS\n Sunrises Hydarabad"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PCA Stadium Mohali, Punjab"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+            <!--    17      play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 17"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12th April 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_17_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/chennai"
+                    android:drawableRight="@drawable/rajstanroyal"
+                    android:text="Chennai Super Kings\n  VS\n Rajasthan Royals "
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M.A.Chidambaram Chepauk Stadium, Chennai, Tamilnadu."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+
+            <!--    18      play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 18"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="13th April 2019,  4.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_18_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/kolkata"
+                    android:drawableRight="@drawable/kingselevenpunjab"
+                    android:text="Kolkata Knight Riders\n  VS\n Kings XI Punjab"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Eden Gardens Kolkata, West Bengal.."
+                    android:textColor="#000000"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+
+            <!--    19      play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 19"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="13th April 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_19_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/royalchalanger"
+                    android:drawableRight="@drawable/dellhi"
+                    android:text=" 	Royal Challengers\n  VS\n Delhi Daredevils"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sheikh Zayed Cricket Stadium, Abu Dhabi."
+                    android:textColor="#000000"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+
+            <!--    20      play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 20"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="14th April 2019,  4.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_20_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/sunrisehydarabad"
+                    android:drawableRight="@drawable/chennai"
+                    android:text="Sunrise Hydarabad\n  VS\n Chennai Super Kings "
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="R.G.I. Cricket Stadium, Hyderabad, Telangana."
+                    android:textColor="#000000"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+            <!--    21      play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 21"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="14th April 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_21_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/rajstanroyal"
+                    android:drawableRight="@drawable/mombai"
+                    android:text=" 	Rajasthan Royals\n  VS\n Mumbai Indians"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sawai Mansingh Stadium, Jaipur, Rajasthan"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+
+
+            <!--    22    play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 22"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="15th April 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_22_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/dellhi"
+                    android:drawableRight="@drawable/kingselevenpunjab"
+                    android:text="Delhi Capitals\n  VS\n Kings XI Punjab"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Feroz Shah Kotla Stadium Delhi"
+                    android:textColor="#000000"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+            <!--    23     play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 23"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="16th April 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_23_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/mombai"
+                    android:drawableRight="@drawable/sunrisehydarabad"
+                    android:text="Mumbai Indians\n  VS\n Sunrise Hydarabad"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wankhede Stadium Mumbai, Maharashtra."
+                    android:textColor="#000000"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+            <!--    24      play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 24"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="17th April 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_24_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/royalchalanger"
+                    android:drawableRight="@drawable/chennai"
+                    android:text=" 	Royal Challengers\n  VS\n Chennai Super Kings"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M.Chinnaswamy Stadium, Bengaluru, Karnataka."
+                    android:textColor="#000000"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+
+            <!--    25      play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 25"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="18th April 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_25_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/sunrisehydarabad"
+                    android:drawableRight="@drawable/kingselevenpunjab"
+                    android:text="Sun Risers Hyderabad\n  VS\n Kings XI Punjab"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="R.G.I. Cricket Stadium, Hyderabad, Telangana."
+                    android:textColor="#000000"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+            <!--    26     play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 26"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="19th April 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_26_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/dellhi"
+                    android:drawableRight="@drawable/kolkata"
+                    android:text="Delhi Capitals\n  VS\n Kolkata Knight Riders"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Feroz Shah Kotla Stadium Delhi"
+                    android:textColor="#000000"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+            <!--    27     play IPL-->-->
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 27"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="20th April 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_27_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/chennai"
+                    android:drawableRight="@drawable/mombai"
+                    android:text="Chennai Super Kings\n  VS\n Mumbai Indians"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M.A.Chidambaram Chepauk Stadium, Chennai, Tamilnadu."
+                    android:textColor="#000000"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+            <!--    28     play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 28"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="21th April 2019,  4.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_28_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/rajstanroyal"
+                    android:drawableRight="@drawable/sunrisehydarabad"
+                    android:text="Rajasthan Royals\n  VS\n Sunrise Hydarabad"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sawai Mansingh Stadium, Jaipur, Rajasthan"
+                    android:textColor="#000000"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+
+            <!--    29    play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 29"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="21th April 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_29_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/royalchalanger"
+                    android:drawableRight="@drawable/kolkata"
+                    android:text=" 	Royal Challengers\n  VS\n Kolkata Knight Riders"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M.Chinnaswamy Stadium, Bengaluru, Karnataka."
+                    android:textColor="#000000"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+
+            <!--    30     play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 30"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="22th April 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_30_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/chennai"
+                    android:drawableRight="@drawable/dellhi"
+                    android:text="Chennai Super Kings\n  VS\n Delhi Capitals"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M.A.Chidambaram Chepauk Stadium, Chennai, Tamilnadu."
+                    android:textColor="#000000"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+
+            <!--    31     play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 31"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="23th April 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_31_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/royalchalanger"
+                    android:drawableRight="@drawable/mombai"
+                    android:text="Royal Challengers\n  VS\n Mumbai Indians"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M.Chinnaswamy Stadium, Bengaluru, Karnataka.."
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+            </LinearLayout>
+
+
+            <!--    32     play IPL-->-->
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 32"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="24th April 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_32_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/dellhi"
+                    android:drawableRight="@drawable/rajstanroyal"
+                    android:text="Delhi Capitals\n  VS\n Rajasthan Royals"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Feroz Shah Kotla Stadium Delhi"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+            </LinearLayout>
+
+
+            <!--    33     play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 33"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="25th April 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_33_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/kolkata"
+                    android:drawableRight="@drawable/chennai"
+                    android:text="Kolkata Knight Riders\n  VS\n Chennai Super Kings"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Eden Gardens Kolkata, West Bengal."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+
+            <!--    34     play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 34"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="26th April 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_34_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/kingselevenpunjab"
+                    android:drawableRight="@drawable/mombai"
+                    android:text="Kings XI Punjab\n  VS\n  Mumbai Indians"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PCA Stadium Mohali, Punjab"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+            </LinearLayout>
+
+            <!--    35     play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 35"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="26th April 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_35_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/chennai"
+                    android:drawableRight="@drawable/royalchalanger"
+                    android:text="Chennai Super Kings\n  VS\n Royal Challengers"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M.A.Chidambaram Chepauk Stadium, Chennai, Tamilnadu."
+                    android:textColor="#000000"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+            </LinearLayout>
+
+
+            <!--    36     play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 36"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="27th April 2019,  4.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_36_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/sunrisehydarabad"
+                    android:drawableRight="@drawable/dellhi"
+                    android:text="Sunrise Hydarabad\n  VS\n Delhi Capitals"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="R.G.I. Cricket Stadium, Hyderabad, Telangana."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+            </LinearLayout>
+
+
+            <!--    37   play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 37"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="27th April 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_37_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/mombai"
+                    android:drawableRight="@drawable/kolkata"
+                    android:text="Mumbai Indians\n  VS\n Kolkata Knight Riders"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wankhede Stadium Mumbai, Maharashtra."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+            </LinearLayout>
+
+            <!--    38   play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 38"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="28th April 2019,  4.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_38_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/kingselevenpunjab"
+                    android:drawableRight="@drawable/rajstanroyal"
+                    android:text="Kings XI Punjab\n  VS\n Rajasthan Royals"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PCA Stadium Mohali, Punjab."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+            </LinearLayout>
+
+
+            <!--    39   play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 39"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="27th April 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_39_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/sunrisehydarabad"
+                    android:drawableRight="@drawable/royalchalanger"
+                    android:text="Sunrise Hydarabad\n  VS\n Royal Challengers "
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="R.G.I. Cricket Stadium, Hyderabad, Telangana."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+            </LinearLayout>
+
+
+            <!--    40   play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 40"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="29th April 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_40_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/rajstanroyal"
+                    android:drawableRight="@drawable/kingselevenpunjab"
+                    android:text="Rajasthan Royals\n  VS\n Kings XI Punjab"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sawai Mansingh Stadium, Jaipur, Rajasthan"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+            </LinearLayout>
+
+            <!--    41   play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 41"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="30th April 2019,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_41_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/kolkata"
+                    android:drawableRight="@drawable/mombai"
+                    android:text="Kolkata Knight Riders\n  VS\n Mumbai Indians"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Eden Gardens Kolkata, West Bengal."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+            </LinearLayout>
+
+            <!--    42   play IPL-->-->
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 42"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1st May 2019 ,  8.00 PM "
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_42_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/dellhi"
+                    android:drawableRight="@drawable/sunrisehydarabad"
+                    android:text="Delhi Capitals\n  VS\n Sunrise Hydarabad"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Feroz Shah Kotla Stadium Delhi"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+            </LinearLayout>
+
+
+            <!--    43   play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 43"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2nd May 2019 ,  8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_43_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/rajstanroyal"
+                    android:drawableRight="@drawable/chennai"
+                    android:text=" 	Rajasthan Royals\n  VS\n Chennai Super Kings"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sawai Mansingh Stadium, Jaipur, Rajasthan."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+            </LinearLayout>
+
+
+            <!--    44   play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 44"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3rd May 2019 , 8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_44_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/kingselevenpunjab"
+                    android:drawableRight="@drawable/kolkata"
+                    android:text="Kings XI Punjab\n  VS\n Kolkata Knight Riders"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PCA Stadium Mohali, Punjab"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+
+            </LinearLayout>
+
+
+            <!--    45   play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 45"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4th May 2019 , 4.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_45_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/dellhi"
+                    android:drawableRight="@drawable/rajstanroyal"
+                    android:text="Delhi Capitals\n  VS\n Rajasthan Royals"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sheikh Zayed Cricket Stadium, Abu Dhabi."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+            </LinearLayout>
+
+
+            <!--    46  play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 46"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4th May 2019 , 8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_46_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/kingselevenpunjab"
+                    android:drawableRight="@drawable/royalchalanger"
+                    android:text="Kings XI Punjab\n  VS\n Royal Challengers"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PCA Stadium Mohali, Punjab"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+            </LinearLayout>
+
+
+            <!--    47  play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 47"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5th May 2019 , 4.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_47_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/mombai"
+                    android:drawableRight="@drawable/rajstanroyal"
+                    android:text="Mumbai Indians\n  VS\n Rajasthan Royals"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wankhede Stadium Mumbai, Maharashtra."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+
+            </LinearLayout>
+
+            <!--    48   play IPL-->-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 48"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5th May 2019 , 8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_48_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/kolkata"
+                    android:drawableRight="@drawable/sunrisehydarabad"
+                    android:text="Kolkata Knight Riders\n  VS\n Sunrise Hydarabad"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Eden Gardens Kolkata, West Bengal."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+
+            </LinearLayout>
+
+
+
+
+
+            <!--49999999999999999999999999999999999999999999-->
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 49"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6th May 2019 , 8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_49_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/chennai"
+                    android:drawableRight="@drawable/mombai"
+                    android:text="Chennai Super Kings\n  VS\n Mumbai Indians"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M.A.Chidambaram Chepauk Stadium, Chennai, Tamilnadu."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+
+            </LinearLayout>
+
+
+            <!--50000000000000000000000000-->
+
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 50"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="7th May 2019 , 8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_50_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/kolkata"
+                    android:drawableRight="@drawable/rajstanroyal"
+                    android:text="Kolkata Knight Riders\n  VS\n Rajasthan Royals"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Eden Gardens Kolkata, West Bengal."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+
+            </LinearLayout>
+
+
+
+
+            <!--511111111111111111-->
+
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 51"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="8th May 2019 , 8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_51_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/mombai"
+                    android:drawableRight="@drawable/kingselevenpunjab"
+                    android:text="Mumbai Indians\n  VS\n Kings XI Punjab"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wankhede Stadium Mumbai, Maharashtra.."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+
+            </LinearLayout>
+
+
+            <!--522222222222222-->
+
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 52"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="9th May 2019 , 8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_52_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/royalchalanger"
+                    android:drawableRight="@drawable/rajstanroyal"
+                    android:text="Royal Challengers Bangalore\n  VS\n Rajasthan Royals"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M.Chinnaswamy Stadium, Bengaluru, Karnataka."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+
+            </LinearLayout>
+
+
+
+            <!--5333333333333333333333-->
+
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 53"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10th May 2019 , 8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_53_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/dellhi"
+                    android:drawableRight="@drawable/chennai"
+                    android:text="Delhi Capitals\n  VS\n Chennai Super Kings"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Feroz Shah Kotla Stadium Delhi."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+
+            </LinearLayout>
+
+
+
+
+            <!--544444444444444-->
+
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 54"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="11th May 2019 , 8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_54_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/royalchalanger"
+                    android:drawableRight="@drawable/sunrisehydarabad"
+                    android:text="Royal Challengers\n  VS\n Sunrisers Hydarabad"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M.Chinnaswamy Stadium, Bengaluru, Karnataka."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+
+            </LinearLayout>
+
+
+            <!--555555555555555-->
+
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 55"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12th May 2019, 8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_55_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/mombai"
+                    android:drawableRight="@drawable/kolkata"
+                    android:text="Mumbai Indians\n  VS\n Kolkata Knight Riders"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wankhede Stadium Mumbai, Maharashtra."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+
+            </LinearLayout>
+
+
+            <!--5666666666666666-->
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 56"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="13th May 2019 , 4.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_56_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/rajstanroyal"
+                    android:drawableRight="@drawable/royalchalanger"
+                    android:text="Rajasthan Royals\n  VS\n Royal Challengers"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sawai Mansingh Stadium, Jaipur, Rajasthan."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+
+            </LinearLayout>
+
+
+
+
+            <!--57777777777777-->
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 57"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="14th May 2019 , 8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_57_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/dellhi"
+                    android:drawableRight="@drawable/chennai"
+                    android:text="Delhi Capitals\n  VS\n hennai Super Kings"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Feroz Shah Kotla Stadium Delhi"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+
+            </LinearLayout>
+
+
+
+            <!--5888888888888888-->
+
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 58"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="15th May 2019 , 8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_58_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/mombai"
+                    android:drawableRight="@drawable/kingselevenpunjab"
+                    android:text="Mumbai Indians\n  VS\n Kings XI Punjab"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wankhede Stadium Mumbai, Maharashtra."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+
+            </LinearLayout>
+
+
+            <!--59999999999999999-->
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 59"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="16th May 2019 , 8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_59_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/batball"
+                    android:drawableRight="@drawable/batball"
+                    android:text=" 	Qualifier-1  "
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Eden Gardens Kolkata, West Bengal."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+
+            </LinearLayout>
+
+
+
+            <!--6000000000000-->
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 60"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="17th May 2019 , 8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_60_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/batball"
+                    android:drawableRight="@drawable/batball"
+                    android:text="Eliminator "
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M.Chinnaswamy Stadium, Bengaluru, Karnataka."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+
+            </LinearLayout>
+
+
+
+            <!--611111111111111111111-->
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 61"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="17th May 2019 , 8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_61_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/batball"
+                    android:drawableRight="@drawable/batball"
+                    android:text=" 	Qualifier-2 "
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M.A.Chidambaram Chepauk Stadium, Chennai, Tamilnadu."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+
+            </LinearLayout>
+
+
+
+            <!--62222222222-->
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match No - 62"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="18th May 2019 , 8.00 PM"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/text_62_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/batball"
+                    android:drawableRight="@drawable/batball"
+                    android:text="FINAL"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wankhede Stadium Mumbai, Maharashtra.."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15.0sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,1058 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#130826"
+    android:orientation="vertical"
+    tools:context=".WinnerActivity">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/winers"/>
+
+
+            <!--2018-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/chennai"
+                    android:drawableRight="@drawable/sunrisehydarabad"
+                    android:gravity="center"
+                    android:text="2018"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="#ef0202"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Winner"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="#673AB7"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="Chennai Super King"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold"
+                   />
+
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#673AB7">
+
+                </View>
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Runner's up"
+                    android:textColor="#673AB7"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Sunrisers Hyderabad"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Venue: Mumbai"
+                    android:textColor="#ff000000"
+                    android:textSize="14.0sp" />
+
+
+
+            </LinearLayout>
+
+
+
+            <!--second layout design.#####-->
+
+
+            <!--2017-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/mombai"
+                    android:drawableRight="@drawable/pune"
+                    android:gravity="center"
+                    android:text="2017"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="#ef0202"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Winner"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="#673AB7"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="Mumbai Indians"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#673AB7">
+
+                </View>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Runner's up"
+                    android:textColor="#673AB7"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Rissing Pune Supergiant"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Venue: Hyderabad"
+                    android:textColor="#ff000000"
+                    android:textSize="14.0sp" />
+
+
+
+            </LinearLayout>
+
+
+
+
+            <!--2016-->
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/sunrisehydarabad"
+                    android:drawableRight="@drawable/royalchalanger"
+                    android:gravity="center"
+                    android:text="2016"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="#ef0202"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Winner"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="#673AB7"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="Sunrisers Hyderabad"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#673AB7">
+
+                </View>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Runner's up"
+                    android:textColor="#673AB7"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Royal Challengers"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Venue: Bengaluru"
+                    android:textColor="#ff000000"
+                    android:textSize="14.0sp" />
+
+
+
+            </LinearLayout>
+
+
+
+            <!--2015-->
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/mombai"
+                    android:drawableRight="@drawable/chennai"
+                    android:gravity="center"
+                    android:text="2015"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="#ef0202"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Winner"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="#673AB7"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="Mumbai Indians"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#673AB7">
+
+                </View>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Runner's up"
+                    android:textColor="#673AB7"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Chennai Super Kings"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Venue: Kolkata"
+                    android:textColor="#ff000000"
+                    android:textSize="14.0sp" />
+
+
+
+            </LinearLayout>
+
+
+            <!--2014-->
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/kolkata"
+                    android:drawableRight="@drawable/kingselevenpunjab"
+                    android:gravity="center"
+                    android:text="2014"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="#ef0202"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Winner"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="#673AB7"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="Kolkata Knight Riders"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#673AB7">
+
+                </View>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Runner's up"
+                    android:textColor="#673AB7"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Kings XI Punjab"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Venue: Bengaluru"
+                    android:textColor="#ff000000"
+                    android:textSize="14.0sp" />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+            <!--2013 design in android studio tutorial-->
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/mombai"
+                    android:drawableRight="@drawable/chennai"
+                    android:gravity="center"
+                    android:text="2013"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="#ef0202"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Winner"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="#673AB7"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="Mumbai Indians"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#673AB7">
+
+                </View>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Runner's up"
+                    android:textColor="#673AB7"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Chennai Super Kings"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Venue: Kolkata"
+                    android:textColor="#ff000000"
+                    android:textSize="14.0sp" />
+
+
+
+            </LinearLayout>
+
+
+            <!--2012-->
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/kolkata"
+                    android:drawableRight="@drawable/chennai"
+                    android:gravity="center"
+                    android:text="2014"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="#ef0202"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Winner"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="#673AB7"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="Kolkata Knight Riders"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#673AB7">
+
+                </View>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Runner's up"
+                    android:textColor="#673AB7"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Chennai Super Kings"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Venue: Chennai"
+                    android:textColor="#ff000000"
+                    android:textSize="14.0sp" />
+
+
+
+            </LinearLayout>
+
+
+
+            <!--2011-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/chennai"
+                    android:drawableRight="@drawable/royalchalanger"
+                    android:gravity="center"
+                    android:text="2011"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="#ef0202"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Winner"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="#673AB7"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="Chennai Super Kings"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#673AB7">
+
+                </View>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Runner's up"
+                    android:textColor="#673AB7"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Royal Challengers Bangalore"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Venue: Chennai"
+                    android:textColor="#ff000000"
+                    android:textSize="14.0sp" />
+
+
+
+            </LinearLayout>
+
+
+
+
+            <!--2010-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/chennai"
+                    android:drawableRight="@drawable/mombai"
+                    android:gravity="center"
+                    android:text="2010"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="#ef0202"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Winner"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="#673AB7"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="Chennai Super Kings"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#673AB7">
+
+                </View>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Runner's up"
+                    android:textColor="#673AB7"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Mumbai Indians"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Venue: Mumbai"
+                    android:textColor="#ff000000"
+                    android:textSize="14.0sp" />
+
+
+
+            </LinearLayout>
+
+
+            <!--2009-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/decan"
+                    android:drawableRight="@drawable/royalchalanger"
+                    android:gravity="center"
+                    android:text="2009"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="#ef0202"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Winner"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="#673AB7"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="Decan Chargers"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#673AB7">
+
+                </View>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Runner's up"
+                    android:textColor="#673AB7"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Royal Challengers Bangalore"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Venue: Johannesburg"
+                    android:textColor="#ff000000"
+                    android:textSize="14.0sp" />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+            <!--2008-->
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/matchschedule_back"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/rajstanroyal"
+                    android:drawableRight="@drawable/chennai"
+                    android:gravity="center"
+                    android:text="2008"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="#ef0202"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Winner"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="#673AB7"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="Rajasthan Royals"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#673AB7">
+
+                </View>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Runner's up"
+                    android:textColor="#673AB7"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Chennai Super Kings"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Venue: Mumbai"
+                    android:textColor="#ff000000"
+                    android:textSize="14.0sp" />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+</LinearLayout>
